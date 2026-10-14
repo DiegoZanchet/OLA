@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clientes - TechFix</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="nav">
+		<img src="imagens/logo.png" class="nav-logo">
+		<h1>TechFix Assistencia Tecnica</h1>
+		<div class="nav-items">
+			<button class="menu"><img src="imagens/menu.png"></button>
+			<a href="index.html" class="nav-button">Início</a>
+			<a href="clientes.html" class="nav-button">Clientes</a>
+			<a href="orcamentos.html" class="nav-button">Orçamentos</a>
+			<a href="contato.html" class="nav-button">Contato</a>
+		</div>
+	</nav>
+
+	<h1 class="text">Cadastro de Clientes</h1>
+
+	<form class="formulario" action="cadastrar_clientes.php" method="POST">
+		<label>Nome:</label>
+		<input type="text" name="nome" required>
+
+		<label>CPF:</label>
+		<input type="text" name="cpf" placeholder="000.000.000-00" required>
+
+		<label>Telefone:</label>
+		<input type="text" name="telefone" required>
+
+		<label>E-mail:</label>
+		<input type="email" name="email">
+
+		<label>Endereço:</label>
+		<input type="text" name="endereco">
+
+		<label>Cidade:</label>
+		<input type="text" name="cidade">
+
+		<button type="submit">Cadastrar</button>
+	</form>
+
+	<footer class="footer">TechFix &copy; 2026</footer>
+</body>
+</html>
